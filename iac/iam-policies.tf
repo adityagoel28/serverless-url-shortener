@@ -1,4 +1,4 @@
-data "aws_iam_policy_document" "get_movie_item" {
+data "aws_iam_policy_document" "put_url_item" {
   statement {
     effect = "Allow"
 
