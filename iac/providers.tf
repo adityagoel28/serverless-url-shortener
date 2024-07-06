@@ -6,7 +6,8 @@ terraform{
         }
     }
 
-    backend "s3"{ # This is the backend configuration for the state file
+    backend "s3"{
+        # This is the backend configuration for the state file
         bucket = "terraform-url-shortener-state-config"
         key = "url-shortener/state"
     }
