@@ -11,6 +11,10 @@ defaults:
   run:
     working-directory: iac/
 
+permissions:
+  id-token: write
+  contents: read
+  
 jobs:
   terraform:
     name: 'Terraform'
