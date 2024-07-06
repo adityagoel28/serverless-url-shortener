@@ -35,8 +35,8 @@ jobs:
 
       # Zip the Python script
       - name: Zip the script
-        run: zip -r ../create_short_url.zip create_short_url.py
+        run: zip -r ../index.zip index.py
 
       # Update Lambda function code
       - name: Update Lambda code
-        run: aws lambda update-function-code --function-name=create-short-url --zip-file=fileb://../create_short_url.zip
+        run: aws lambda update-function-code --function-name=create-short-url --zip-file=fileb://../index.zip
