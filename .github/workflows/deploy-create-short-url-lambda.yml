@@ -4,12 +4,12 @@ on:
     branches:
       - main
     paths:
-      - apps/create_short_url.py
+      - apps/create-short-url/**/*
       - .github/workflows/deploy-create-short-url-lambda.yml
 
 defaults:
   run:
-    working-directory: apps/
+    working-directory: apps/create-short-url/
 
 jobs:
   terraform:

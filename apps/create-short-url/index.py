@@ -14,7 +14,7 @@ def generate_code():
     alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
     return ''.join(random.choice(alphabet) for _ in range(7))
 
-def handler(event, context):
+def lambda_handler(event, context):
     try:
         request_body = event.get('body')
         if not request_body:
