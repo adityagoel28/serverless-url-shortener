@@ -7,7 +7,7 @@ module "create_short_url_lambda" {
   ]
 
   environment_variables = {
-    BASE_URL = "https://qor5ds5psa.execute-api.ap-south-1.amazonaws.com/live", # fetch this value from api gateway invoke url only
+    BASE_URL = "https://qor5ds5psa.execute-api.ap-south-1.amazonaws.com/live/", # fetch this value from api gateway invoke url only
   }
 }
 
