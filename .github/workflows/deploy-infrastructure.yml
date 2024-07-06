@@ -24,9 +24,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Print AWS Access Key
-        run: echo "AWS Access Key: ${{ secrets.AWS_ACCESS_KEY_ID }}"
-
       - name: Configure AWS Credentials Action For GitHub Actions
         uses: aws-actions/configure-aws-credentials@v1
         with:
