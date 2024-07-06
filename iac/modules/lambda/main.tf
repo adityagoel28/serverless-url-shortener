@@ -13,4 +13,8 @@ resource "aws_lambda_function" "lambda" {
   role          = aws_iam_role.iam_for_lambda.arn
   handler       = "index.handler" # index is the file name, handler is the function name
   runtime       = "nodejs20.x"
+
+  environment {
+    variables = var.environment_variables
+  }
 }

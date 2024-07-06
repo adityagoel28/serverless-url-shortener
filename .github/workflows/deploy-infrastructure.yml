@@ -43,6 +43,10 @@ jobs:
       - name: Terraform Format
         run: terraform fmt -check
 
+      # Destroying previous AWS resources
+      - name: Terraform Destroy
+        run: terraform destroy -auto-approve -input=false
+
       # Generates an execution plan for Terraform
       - name: Terraform Plan
         run: |
